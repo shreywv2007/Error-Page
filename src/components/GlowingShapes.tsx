@@ -45,6 +45,8 @@ export function GlowingShapes() {
           style={{
             background: 'linear-gradient(45deg, #ff6b9d, #4ecdc4)',
             boxShadow: '0 0 20px #ff6b9d',
+            left: `${20 + i * 30}%`,
+            top: `${50}%`,
           }}
           animate={{
             x: [0, 200, 400, 200, 0],
@@ -57,10 +59,6 @@ export function GlowingShapes() {
             repeat: Infinity,
             ease: "easeInOut",
             delay: i * 2,
-          }}
-          style={{
-            left: `${20 + i * 30}%`,
-            top: `${50}%`,
           }}
         />
       ))}
