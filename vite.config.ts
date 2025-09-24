@@ -4,7 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/',
+  base: '/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -51,8 +51,8 @@
       },
     },
     build: {
-      target: 'esnext',
-      outDir: 'dist',
+    target: 'esnext',
+    outDir: 'dist',
     },
     server: {
       port: 3000,
